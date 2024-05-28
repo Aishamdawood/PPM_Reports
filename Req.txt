@@ -1,0 +1,9 @@
+pandasai
+streamlit
+langchain_anthropic
+seaborn
+python-dotenv 
+langchain_community
+Ollama
+langchain
+langchain_experimental
