@@ -1,0 +1,511 @@
+2024-05-12 14:54:03 [INFO] Question: Which are the top 5 countries by population
+2024-05-12 14:54:03 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-12 14:54:03 [INFO] Prompt ID: c1814f0e-8fdb-4c58-991d-f4fc2345b223
+2024-05-12 14:54:03 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-12 14:54:03 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-12 14:54:03 [INFO] Executing Step 1: CacheLookup
+2024-05-12 14:54:03 [INFO] Executing Step 2: PromptGeneration
+2024-05-12 14:54:03 [ERROR] Pipeline failed on step 2: No module named 'pandas.io.formats.csvs'
+2024-05-12 14:56:10 [INFO] Question: What is the total populations of the top 5 countries by population?
+2024-05-12 14:56:10 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-12 14:56:10 [INFO] Prompt ID: 8ff06d34-2118-4f97-ab65-55adb3b53acc
+2024-05-12 14:56:10 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-12 14:56:10 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-12 14:56:10 [INFO] Executing Step 1: CacheLookup
+2024-05-12 14:56:10 [INFO] Executing Step 2: PromptGeneration
+2024-05-12 14:56:10 [ERROR] Pipeline failed on step 2: No module named 'pandas.io.formats.csvs'
+2024-05-12 15:40:51 [INFO] Question: Which are the top 5 countries by population
+2024-05-12 15:40:51 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-12 15:40:51 [INFO] Prompt ID: 5b0b94a6-2aef-4dab-a192-fd9ca2dfb314
+2024-05-12 15:40:51 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-12 15:40:51 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-12 15:40:51 [INFO] Executing Step 1: CacheLookup
+2024-05-12 15:40:51 [INFO] Executing Step 2: PromptGeneration
+2024-05-12 15:40:51 [INFO] Using prompt: <dataframe>
+dfs[0]:20x2
+Country,Population
+Russia,71801279
+China,144444359
+Iran,126527060
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Which are the top 5 countries by population
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-12 15:40:51 [INFO] Executing Step 3: CodeGenerator
+2024-05-12 15:40:51 [ERROR] Pipeline failed on step 3: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7c0d77b23d90>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-05-12 15:59:31 [INFO] Question: Which are the top 5 countries by population
+2024-05-12 15:59:31 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-12 15:59:31 [INFO] Prompt ID: 72aae721-636b-40ec-8c16-4f3c6a8866a5
+2024-05-12 15:59:31 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-12 15:59:31 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-12 15:59:31 [INFO] Executing Step 1: CacheLookup
+2024-05-12 15:59:31 [INFO] Executing Step 2: PromptGeneration
+2024-05-12 15:59:31 [INFO] Using prompt: <dataframe>
+dfs[0]:20x2
+Country,Population
+Japan,83294633
+Bangladesh,128455567
+Thailand,1425671352
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Which are the top 5 countries by population
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-12 15:59:31 [INFO] Executing Step 3: CodeGenerator
+2024-05-12 15:59:31 [ERROR] Pipeline failed on step 3: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7c0d772ca9e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-05-12 15:59:32 [INFO] Question: What is the total populations of the top 5 countries by population?
+2024-05-12 15:59:32 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-12 15:59:32 [INFO] Prompt ID: b4f6ab80-256e-4e11-b5aa-9d38f678cbdb
+2024-05-12 15:59:32 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-12 15:59:32 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-12 15:59:32 [INFO] Executing Step 1: CacheLookup
+2024-05-12 15:59:32 [INFO] Executing Step 2: PromptGeneration
+2024-05-12 15:59:32 [INFO] Using prompt: <dataframe>
+dfs[0]:20x2
+Country,Population
+Japan,83294633
+Bangladesh,128455567
+Thailand,1425671352
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What is the total populations of the top 5 countries by population?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-12 15:59:32 [INFO] Executing Step 3: CodeGenerator
+2024-05-12 15:59:32 [ERROR] Pipeline failed on step 3: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7c0d771d6080>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-05-12 16:02:01 [INFO] Question: Which are the top 5 countries by population
+2024-05-12 16:02:01 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-12 16:02:01 [INFO] Prompt ID: 61bfb0b6-22d6-4258-9c0b-c10df527e99a
+2024-05-12 16:02:01 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-12 16:02:01 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-12 16:02:01 [INFO] Executing Step 1: CacheLookup
+2024-05-12 16:02:01 [INFO] Executing Step 2: PromptGeneration
+2024-05-12 16:02:01 [INFO] Using prompt: <dataframe>
+dfs[0]:20x2
+Country,Population
+Japan,83294633
+Bangladesh,128455567
+Thailand,1425671352
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Which are the top 5 countries by population
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-12 16:02:01 [INFO] Executing Step 3: CodeGenerator
+2024-05-12 16:02:01 [ERROR] Pipeline failed on step 3: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7c0d772907f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-05-12 19:17:04 [INFO] Question: Which are the top 5 countries by population
+2024-05-12 19:17:04 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-12 19:17:04 [INFO] Prompt ID: 608a4092-b389-4f11-ba42-46b91e7b536d
+2024-05-12 19:17:04 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-12 19:17:04 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-12 19:17:04 [INFO] Executing Step 1: CacheLookup
+2024-05-12 19:17:04 [INFO] Executing Step 2: PromptGeneration
+2024-05-12 19:17:04 [INFO] Using prompt: <dataframe>
+dfs[0]:20x2
+Country,Population
+DR Congo,128455567
+Turkey,277534122
+China,126527060
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Which are the top 5 countries by population
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-12 19:17:04 [INFO] Executing Step 3: CodeGenerator
+2024-05-12 19:17:04 [ERROR] Pipeline failed on step 3: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull mistral`.
+2024-05-12 19:17:10 [INFO] Question: What is the total populations of the top 5 countries by population?
+2024-05-12 19:17:10 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-12 19:17:10 [INFO] Prompt ID: b324a618-2b19-4d67-bc07-07a06d9414f1
+2024-05-12 19:17:10 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-12 19:17:10 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-12 19:17:10 [INFO] Executing Step 1: CacheLookup
+2024-05-12 19:17:10 [INFO] Executing Step 2: PromptGeneration
+2024-05-12 19:17:10 [INFO] Using prompt: <dataframe>
+dfs[0]:20x2
+Country,Population
+DR Congo,128455567
+Turkey,277534122
+China,126527060
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What is the total populations of the top 5 countries by population?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-12 19:17:10 [INFO] Executing Step 3: CodeGenerator
+2024-05-12 19:17:10 [ERROR] Pipeline failed on step 3: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull mistral`.
+2024-05-12 19:17:39 [INFO] Question: Which are the top 5 countries by population
+2024-05-12 19:17:39 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-12 19:17:39 [INFO] Prompt ID: 09448ad3-f15a-43bc-80eb-f67e44f79467
+2024-05-12 19:17:39 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-12 19:17:39 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-12 19:17:39 [INFO] Executing Step 1: CacheLookup
+2024-05-12 19:17:39 [INFO] Executing Step 2: PromptGeneration
+2024-05-12 19:17:39 [INFO] Using prompt: <dataframe>
+dfs[0]:20x2
+Country,Population
+United States,240485658
+Brazil,83294633
+Thailand,223804632
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Which are the top 5 countries by population
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-12 19:17:39 [INFO] Executing Step 3: CodeGenerator
+2024-05-12 19:17:39 [ERROR] Pipeline failed on step 3: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull mistral`.
+2024-05-12 19:17:55 [INFO] Question: What is the total populations of the top 5 countries by population?
+2024-05-12 19:17:55 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-12 19:17:55 [INFO] Prompt ID: 3872089c-8786-41c2-97a0-c2f085866a64
+2024-05-12 19:17:55 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-12 19:17:55 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-12 19:17:55 [INFO] Executing Step 1: CacheLookup
+2024-05-12 19:17:55 [INFO] Executing Step 2: PromptGeneration
+2024-05-12 19:17:55 [INFO] Using prompt: <dataframe>
+dfs[0]:20x2
+Country,Population
+United States,240485658
+Brazil,83294633
+Thailand,223804632
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What is the total populations of the top 5 countries by population?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-12 19:17:55 [INFO] Executing Step 3: CodeGenerator
+2024-05-12 19:17:55 [ERROR] Pipeline failed on step 3: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull mistral`.
+2024-05-12 19:19:30 [INFO] Question: Which are the top 5 countries by population
+2024-05-12 19:19:30 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-12 19:19:30 [INFO] Prompt ID: dddaad7f-fe76-4445-89e1-0ae38254f94a
+2024-05-12 19:19:30 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-12 19:19:30 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-12 19:19:30 [INFO] Executing Step 1: CacheLookup
+2024-05-12 19:19:30 [INFO] Executing Step 2: PromptGeneration
+2024-05-12 19:19:30 [INFO] Using prompt: <dataframe>
+dfs[0]:20x2
+Country,Population
+Pakistan,240485658
+Bangladesh,112716598
+Ethiopia,83294633
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Which are the top 5 countries by population
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-12 19:19:30 [INFO] Executing Step 3: CodeGenerator
+2024-05-12 19:19:30 [ERROR] Pipeline failed on step 3: Ollama call failed with status code 404. Maybe your model is not found and you should pull the model with `ollama pull mistral`.
+2024-05-12 19:39:53 [INFO] Question: Which are the top 5 countries by population
+2024-05-12 19:39:53 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-12 19:39:53 [INFO] Prompt ID: 3dee39be-ea53-480d-becb-c11a7a3f8df5
+2024-05-12 19:39:53 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-12 19:39:53 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-12 19:39:53 [INFO] Executing Step 1: CacheLookup
+2024-05-12 19:39:53 [INFO] Executing Step 2: PromptGeneration
+2024-05-12 19:39:53 [INFO] Using prompt: <dataframe>
+dfs[0]:20x2
+Country,Population
+Vietnam,277534122
+Indonesia,216422446
+Germany,339996563
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ Which are the top 5 countries by population
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-12 19:39:53 [INFO] Executing Step 3: CodeGenerator
+2024-05-12 19:39:53 [ERROR] Pipeline failed on step 3: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71a7471342b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-05-12 19:40:10 [INFO] Question: What is the total populations of the top 5 countries by population?
+2024-05-12 19:40:10 [INFO] Running PandasAI with langchain_ollama-llm LLM...
+2024-05-12 19:40:10 [INFO] Prompt ID: 931a7d24-4acc-412d-8798-08d178a671e6
+2024-05-12 19:40:10 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-12 19:40:10 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-12 19:40:10 [INFO] Executing Step 1: CacheLookup
+2024-05-12 19:40:10 [INFO] Executing Step 2: PromptGeneration
+2024-05-12 19:40:10 [INFO] Using prompt: <dataframe>
+dfs[0]:20x2
+Country,Population
+Vietnam,277534122
+Indonesia,216422446
+Germany,339996563
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+### QUERY
+ What is the total populations of the top 5 countries by population?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-12 19:40:10 [INFO] Executing Step 3: CodeGenerator
+2024-05-12 19:40:10 [ERROR] Pipeline failed on step 3: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x71a747135570>: Failed to establish a new connection: [Errno 111] Connection refused'))
