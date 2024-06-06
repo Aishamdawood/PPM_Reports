@@ -3139,3 +3139,167 @@ result = {'type': 'string', 'value': f'أعلى قيمة عقد هو: {highest_c
 2024-05-28 18:32:22 [INFO] Executing Step 7: ResultValidation
 2024-05-28 18:32:22 [INFO] Answer: {'type': 'string', 'value': 'أعلى قيمة عقد هو: 5000000'}
 2024-05-28 18:32:22 [INFO] Executing Step 8: ResultParsing
+2024-05-28 18:38:22 [INFO] Question: ماهو العقد الذي  له أكبر قيمة؟,Answerin arabic?
+2024-05-28 18:38:22 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-28 18:38:22 [INFO] Prompt ID: 7ab31c91-0c19-4121-a4ce-6813856f5406
+2024-05-28 18:38:22 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-28 18:38:22 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-28 18:38:22 [INFO] Executing Step 1: CacheLookup
+2024-05-28 18:38:22 [INFO] Executing Step 2: PromptGeneration
+2024-05-28 18:38:23 [INFO] Using prompt: <dataframe>
+dfs[0]:20x10
+رقم المشروع,قيمة العقد في منصة اعتماد,التقدم الحالي,تاريخ النهاية الفعلي,المدة الأصلية (أيام),المدة الحالية (أيام),المدة المتوقعة (أيام),المدة المنقضية (أيام),المدة الفعلية (أيام),تاريخ البدء الفعلي
+Pro-15,800000,0.1,2025-09-05,2800,420,2000,500,350,2022-04-30
+Pro-6,300000,0.95,2025-05-15,3650,180,4000,2200,2900,2022-05-15
+Pro-17,700000,0.9,2027-12-04,2500,1600,1000,400,500,2022-03-15
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ ماهو العقد الذي  له أكبر قيمة؟,Answerin arabic?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-28 18:38:23 [INFO] Executing Step 3: CodeGenerator
+2024-05-28 18:38:27 [INFO] Prompt used:
+            None
+            
+2024-05-28 18:38:27 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+max_contract_value = max(dfs[0]['قيمة العقد في منصة اعتماد'])
+max_contract_row = dfs[0][dfs[0]['قيمة العقد في منصة اعتماد'] == max_contract_value]
+
+result = {"type": "string", "value": f"العقد الذي له أكبر قيمة هو: {max_contract_row['رقم المشروع'].values[0]}"}
+            ```
+            
+2024-05-28 18:38:27 [INFO] Executing Step 4: CachePopulation
+2024-05-28 18:38:27 [INFO] Executing Step 5: CodeCleaning
+2024-05-28 18:38:27 [INFO] 
+Code running:
+```
+max_contract_value = max(dfs[0]['قيمة العقد في منصة اعتماد'])
+max_contract_row = dfs[0][dfs[0]['قيمة العقد في منصة اعتماد'] == max_contract_value]
+result = {'type': 'string', 'value': f"العقد الذي له أكبر قيمة هو: {max_contract_row['رقم المشروع'].values[0]}"}
+        ```
+2024-05-28 18:38:27 [INFO] Executing Step 6: CodeExecution
+2024-05-28 18:38:27 [INFO] Executing Step 7: ResultValidation
+2024-05-28 18:38:27 [INFO] Answer: {'type': 'string', 'value': 'العقد الذي له أكبر قيمة هو: Pro-20'}
+2024-05-28 18:38:27 [INFO] Executing Step 8: ResultParsing
+2024-05-28 18:40:10 [INFO] Question: ماهي مدة العقد pro-20  بالأيام ؟,Answerin arabic?
+2024-05-28 18:40:10 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-28 18:40:10 [INFO] Prompt ID: c7a9196f-5ec2-4ee1-82a7-50578e71db90
+2024-05-28 18:40:10 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-28 18:40:10 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-28 18:40:10 [INFO] Executing Step 1: CacheLookup
+2024-05-28 18:40:10 [INFO] Executing Step 2: PromptGeneration
+2024-05-28 18:40:11 [INFO] Using prompt: <dataframe>
+dfs[0]:20x10
+رقم المشروع,قيمة العقد في منصة اعتماد,التقدم الحالي,تاريخ النهاية الفعلي,المدة الأصلية (أيام),المدة الحالية (أيام),المدة المتوقعة (أيام),المدة المنقضية (أيام),المدة الفعلية (أيام),تاريخ البدء الفعلي
+Pro-3,1500000,0.15,2025-08-10,2500,365,2700,1900,3500,2021-07-05
+Pro-9,350000,0.05,2028-03-01,2200,1400,4000,100,2000,2021-12-04
+Pro-19,800000,0.75,2028-02-15,2800,180,2200,1100,200,2023-08-30
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ ماهي مدة العقد pro-20  بالأيام ؟,Answerin arabic?
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-28 18:40:11 [INFO] Executing Step 3: CodeGenerator
+2024-05-28 18:40:16 [INFO] Prompt used:
+            None
+            
+2024-05-28 18:40:16 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+for df in dfs:
+    if "Pro-20" in df["رقم المشروع"].values:
+        pro_20_row = df[df["رقم المشروع"] == "Pro-20"]
+        duration_days = pro_20_row["المدة الفعلية (أيام)"].values[0]
+        result = { "type": "string", "value": f"مدة العقد Pro-20 بالأيام هي: {duration_days}" }
+        break
+else:
+    result = { "type": "string", "value": "العقد Pro-20 غير موجود في البيانات." }
+
+result
+            ```
+            
+2024-05-28 18:40:16 [INFO] Executing Step 4: CachePopulation
+2024-05-28 18:40:16 [INFO] Executing Step 5: CodeCleaning
+2024-05-28 18:40:16 [INFO] 
+Code running:
+```
+for df in dfs:
+    if 'Pro-20' in df['رقم المشروع'].values:
+        pro_20_row = df[df['رقم المشروع'] == 'Pro-20']
+        duration_days = pro_20_row['المدة الفعلية (أيام)'].values[0]
+        result = {'type': 'string', 'value': f'مدة العقد Pro-20 بالأيام هي: {duration_days}'}
+        break
+else:
+    result = {'type': 'string', 'value': 'العقد Pro-20 غير موجود في البيانات.'}
+result
+        ```
+2024-05-28 18:40:16 [INFO] Executing Step 6: CodeExecution
+2024-05-28 18:40:16 [INFO] Executing Step 7: ResultValidation
+2024-05-28 18:40:16 [INFO] Answer: {'type': 'string', 'value': 'مدة العقد Pro-20 بالأيام هي: 3500'}
+2024-05-28 18:40:16 [INFO] Executing Step 8: ResultParsing
